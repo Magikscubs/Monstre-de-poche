@@ -1,5 +1,12 @@
+body {
+    margin:0;
+    font-family: Dyuthi, sans-serif;
+    color: black;
+}
+
 h1 {
     font: 2em "Dyuthi", sans-serif;
     color: black;
-    background-color: red;
+    background-color: rgb(200,0,0);
+    position: fixed;
 }
