@@ -163,6 +163,14 @@ label:after {
 	transition: 0.3s;
 }
 
+.mail{
+    justify-content: center;
+    text-align: center;
+    background-color: #272727;
+    border-radius: 5px;
+    border:solid;
+  }
+
 input:checked + label {
 	background: #ffffff;
 }
