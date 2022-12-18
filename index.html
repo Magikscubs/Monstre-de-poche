@@ -7,6 +7,8 @@
         <link id="css" rel="stylesheet" href="styleIndex.css">
         <link rel="icon" href="masterBall.ico">
         <script src="cssModeIndex.js"></script>
+        <script src="https://smtpjs.com/v3/smtp.js"></script>
+        <script src="sendEmail.js"></script>
         <section id="menu">
             <section class="main">
                 <img src="banqueImage/autre/pokéBall.png" width="4%" height="50%">
@@ -951,6 +953,14 @@
             </section>
         <br>
         </flex>
+        <section class="mail">
+            <form class="contact_form" action="#">
+                <p>Nous contacter</p><br>
+                <p>Commentaire</p>
+                <textarea class="msg" cols="20" rows="5" placeholder="Votre commentaire"></textarea><br>
+                    <input type="button" value="envoyer Email" onclick="sendEmail()" />
+                </form>
+        </section>
         <table id="redirection">
             <tr>
                 <td class="violet">
