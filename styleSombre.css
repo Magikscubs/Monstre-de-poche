@@ -1,0 +1,177 @@
+html{
+  font-family:'Trebuchet MS', serif;
+  font-size: 120%;
+  color: #ffffff;
+}
+
+#menu {
+  position: sticky;
+  top: 0;
+  background-color: #272727;
+  border: 3px solid #ffffff;
+  display: flex;
+}
+
+#menu .main{
+  display: flex;
+  font-size: 150%;
+}
+
+#menu .cssmode{
+  display: flex;
+  align-items: center;
+  font-size: 120%;
+}
+
+body {
+  background-color: #000000;
+  }
+
+  #paratext{
+    padding: 1%;
+  }
+
+  #paratext .title{
+    max-width: 50%;
+    background-color: #272727;
+    border-radius: 5px;
+    border: solid;
+  }
+
+  #paratext .intro{
+    background-color: #272727;
+    border-radius: 5px;
+    border: solid;
+  }
+
+  #pkmn .conteneur{
+    padding: 1%;
+  }
+  
+  #pkmn .pokemonL{
+    display: flex;
+    align-items: center;
+    background-color: #272727;
+    border-radius: 5px;
+    padding-left: 1%;
+    padding-right: 1%;
+    border:solid;
+  }
+
+img{
+  padding:2%;
+}
+
+table {
+  border-collapse: collapse;
+}
+
+a:link {
+color: #c0c0c0;
+}
+
+a:visited {
+color: #c0c0c0;
+text-decoration: none;
+}
+
+a:hover {
+color: #c0c0c0;
+text-decoration: none;
+}
+
+a:active {
+color: #c0c0c0;
+text-decoration: none;
+} 
+
+#redirection .violet{
+  background-color: #272727;
+  position: relative;
+  max-width: 100%;
+  padding: 5px;
+  border-radius: 5px;
+}
+
+#redirection .ecarlate{
+  max-width: 100%;;
+  position: relative;
+  background-color: #272727;
+  padding: 5px;
+  border-radius: 5px;
+}
+
+#redirection .red{
+  background-color: #272727;
+  border-radius: 5px;
+  display: flex;
+  text-align: center;
+}
+
+#redirection .vio{
+  background-color: #272727;
+  border-radius: 5px;
+  display: flex;
+  text-align: center;
+}
+
+anchor{
+  position: fixed;
+  right: 4%;
+  bottom: 5%;
+  background-color: rgba(0,0,0,.3);
+  border-radius: 5px;
+  padding: 10px 10px;
+  font-size: 250%;
+  
+}
+
+anchor:hover {
+    text-decoration: none;
+    background: rgba(0,0,0,.5);
+}
+
+anchor:link{
+  text-decoration: none;
+}
+
+input[type=checkbox]{
+	height: 0;
+	width: 0;
+	visibility: hidden;
+}
+
+label {
+	cursor: pointer;
+	width: 100px;
+	height: 50px;
+	background: rgb(0, 0, 0);
+	display: block;
+	border-radius: 50px;
+	position: relative;
+}
+
+label:after {
+	content: '';
+	position: absolute;
+	top: 2.5px;
+	left: 5px;
+	width: 45px;
+	height: 45px;
+	background: rgb(0, 0, 0);
+	border-radius: 90px;
+	transition: 0.3s;
+}
+
+input:checked + label {
+	background: #ffffff;
+}
+
+input:checked + label:after {
+	left: calc(100% - 5px);
+	transform: translateX(-100%);
+}
+
+label:active:after {
+	width: 65px;
+}

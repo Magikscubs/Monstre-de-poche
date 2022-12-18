@@ -1,0 +1,180 @@
+html{
+  font-family:'Trebuchet MS', serif;
+  font-size: 120%;
+}
+
+#menu {
+  position: sticky;
+  top: 0;
+  background: linear-gradient(0deg, rgb(255, 255, 255) 0%,rgb(0,0,0) 50%, rgba(224,0,0,1) 100%); 
+  border: 3px solid #000000;
+  display: flex;
+}
+
+#menu .main{
+  font-family:'Trebuchet MS', serif;
+  display: flex;
+  font-size: 150%;
+}
+
+#menu .cssmode{
+  color: whitesmoke;
+  font-family:'Trebuchet MS', serif;
+  display: flex;
+  align-items: center;
+  font-size: 120%;
+}
+
+body {
+    background-size: 100%;
+    background-image:url(banqueImage/autre/map.jpg);  
+  }
+
+  #paratext{
+    padding: 1%;
+  }
+
+  #paratext .title{
+    max-width: 50%;
+    background: linear-gradient(90deg, rgba(224,0,0,1) 0%,rgb(255, 255, 255)100%);
+    border-radius: 5px;
+    border: solid;
+  }
+
+  #paratext .intro{
+    background: linear-gradient(90deg, rgba(224,0,0,1) 0%,rgb(255, 255, 255)50%, rgba(133,13,213) 100%);
+    border-radius: 5px;
+    border: solid;
+  }
+
+  #pkmn .conteneur{
+    padding: 1%;
+  }
+  
+  #pkmn .pokemonL{
+    display: flex;
+    align-items: center;
+    background: linear-gradient(90deg, rgba(224,0,0,1) 0%,rgb(255, 255, 255)50%, rgba(133,13,213) 100%);
+    border-radius: 5px;
+    padding-left: 1%;
+    padding-right: 1%;
+    border:solid;
+  }
+
+img{
+  padding:2%;
+}
+
+table {
+  border-collapse: collapse;
+}
+
+a:link {
+color: whitesmoke;
+}
+
+a:visited {
+color: whitesmoke;
+text-decoration: none;
+}
+
+a:hover {
+color: whitesmoke;
+text-decoration: none;
+}
+
+a:active {
+color: whitesmoke;
+text-decoration: none;
+} 
+
+#redirection .violet{
+  background: linear-gradient(90deg, rgb(255, 255, 255) 0%, rgba(224,0,0,1) 100%);
+  position: relative;
+  max-width: 100%;
+  padding: 5px;
+  border-radius: 5px;
+}
+
+#redirection .ecarlate{
+  max-width: 100%;;
+  position: relative;
+  background: linear-gradient(90deg,rgba(133,13,213) 0%, rgb(255, 255, 255) 100%);
+  padding: 5px;
+  border-radius: 5px;
+}
+
+#redirection .red{
+  background: linear-gradient(90deg,rgba(224,0,0,1) 0%, rgb(255, 255, 255) 100%);
+  border-radius: 5px;
+  display: flex;
+  text-align: center;
+}
+
+#redirection .vio{
+  background: linear-gradient(90deg, rgb(255, 255, 255) 0%, rgba(133,13,213)100%);
+  border-radius: 5px;
+  display: flex;
+  text-align: center;
+}
+
+anchor{
+  position: fixed;
+  right: 4%;
+  bottom: 5%;
+  background-color: rgba(0,0,0,.3);
+  border-radius: 5px;
+  padding: 10px 10px;
+  font-size: 250%;
+  
+}
+
+anchor:hover {
+    text-decoration: none;
+    background: rgba(0,0,0,.5);
+}
+
+anchor:link{
+  text-decoration: none;
+}
+
+input[type=checkbox]{
+	height: 0;
+	width: 0;
+	visibility: hidden;
+}
+
+label {
+	cursor: pointer;
+	width: 100px;
+	height: 50px;
+	background: grey;
+	display: block;
+	border-radius: 50px;
+	position: relative;
+}
+
+label:after {
+	content: '';
+	position: absolute;
+	top: 2.5px;
+	left: 5px;
+	width: 45px;
+	height: 45px;
+	background: #fff;
+	border-radius: 90px;
+	transition: 0.3s;
+}
+
+input:checked + label {
+	background: #bada55;
+}
+
+input:checked + label:after {
+	left: calc(100% - 5px);
+	transform: translateX(-100%);
+}
+
+label:active:after {
+	width: 65px;
+}
